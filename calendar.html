@@ -28,22 +28,31 @@
       <input type="number" class="form-control input-lg" id="startDate">
     </div>
   </div>
+
   <div class="col-xs-12">
     <div class="form-group col-xs-3">
       <label for="noWeeks">How many weeks do you want?</label>
-      <input type="number" class="form-control input-lg" id="startDate">
+      <input type="number" class="form-control input-lg" id="noWeeks">
     </div>
   </div>
 
 
-  <div class="col-xs-12">
-    <div class="checkbox col-sm-3 col-xs-6" id="checkboxHidden" style="color:green">
-      <label><input type="checkbox" id="weekendYes" name="weekendYes" value="weekend" onclick="hide()">Do you want weekends?</label>
+  <div class="col-xs-12" style="padding-bottom:20px">
+    <div class="col-sm-3 col-xs-6">
+      <label>Do you want weekends?</label></br>
+      <div class="col-xs-3">
+        <input type="radio" class="myRadio" id="weekendYes" name="weekend" value="Yes" onclick="hide()"><label class="radio-inline input-lg" for="weekendYes">Yes</label>
+      </div>
+      <div class="col-xs-3">
+        <input type="radio" class="myRadio" id="weekendNo" name="weekend" value="No" onclick="hide()"><label class="radio-inline input-lg" for="weekendNo">No</label>
+      </div>
     </div>
   </div>
 
-  <div class="col-xs-12">
-    <button type="button" class="btn btn-success btn-lg" onclick="calendarCreate()">Create</button>
+  <div class="col-xs-12" style="padding-bottom:50px">
+    <div class="col-sm-3 col-xs-6">
+      <button type="button" class="btn btn-success btn-lg" onclick="calendarCreate()">Create</button>
+    </div>
   </div>
 
   <div class="col-xs-12">
