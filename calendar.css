@@ -1,0 +1,36 @@
+.box {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  position: absolute;
+}
+
+.monday{
+  left:0;
+}
+
+.tuesday{
+  left: 110px;
+}
+
+.wednesday{
+  left: 220px;
+}
+
+.thursday{
+  left: 330px;
+}
+
+.friday{
+  left: 440px;
+}
+
+.saturday{
+  left: 550px;
+  visibility: visible;
+}
+
+.sunday{
+  left: 660px;
+  visibility: visible;
+}

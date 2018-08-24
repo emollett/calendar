@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Calendar creater</title>
+    <link rel="stylesheet" type="text/css" href="calendar.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+  <script src="calendar.js"></script>
+
+  <div class="col-xs-12">
+    <h1>Calendar creater</h1>
+  </div>
+
+  <div class="col-xs-12">
+    <div class="form-group col-xs-3">
+      <label for="startDate">What date do you want to start the calendar?</label>
+      <input type="number" class="form-control input-lg" id="startDate">
+    </div>
+  </div>
+  <div class="col-xs-12">
+    <div class="form-group col-xs-3">
+      <label for="noWeeks">How many weeks do you want?</label>
+      <input type="number" class="form-control input-lg" id="startDate">
+    </div>
+  </div>
+
+
+  <div class="col-xs-12">
+    <div class="checkbox col-sm-3 col-xs-6" id="checkboxHidden" style="color:green">
+      <label><input type="checkbox" id="weekendYes" name="weekendYes" value="weekend" onclick="hide()">Do you want weekends?</label>
+    </div>
+  </div>
+
+  <div class="col-xs-12">
+    <button type="button" class="btn btn-success btn-lg" onclick="calendarCreate()">Create</button>
+  </div>
+
+  <div class="col-xs-12">
+    <div class="box monday"></div>
+    <div class="box tuesday"></div>
+    <div class="box wednesday"></div>
+    <div class="box thursday"></div>
+    <div class="box friday"></div>
+    <div class="box saturday" id="saturday"></div>
+    <div class="box sunday" id="sunday"></div>
+  </div>
+
+</body>
+
+</html>
