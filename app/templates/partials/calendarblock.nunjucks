@@ -1,0 +1,9 @@
+<div class="col-xs-12">
+  <div class="box monday"></div>
+  <div class="box tuesday"></div>
+  <div class="box wednesday"></div>
+  <div class="box thursday"></div>
+  <div class="box friday"></div>
+  <div class="box saturday" id="saturday"></div>
+  <div class="box sunday" id="sunday"></div>
+</div>
