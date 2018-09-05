@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "basic calendar creation",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emollett/calendar.git"
@@ -19,5 +17,9 @@
   "dependencies": {
     "handlebars": "^4.0.11",
     "npm": "^6.4.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-nunjucks-render": "^2.2.2"
   }
 }

@@ -5,33 +5,38 @@
   position: absolute;
 }
 
+.calBlock {
+  position: absolute;
+  margin-bottom: 95px;
+}
+
 .monday{
   left:0;
 }
 
 .tuesday{
-  left: 110px;
+  left: 100px;
 }
 
 .wednesday{
-  left: 220px;
+  left: 200px;
 }
 
 .thursday{
-  left: 330px;
+  left: 300px;
 }
 
 .friday{
-  left: 440px;
+  left: 400px;
 }
 
 .saturday{
-  left: 550px;
+  left: 500px;
   visibility: visible;
 }
 
 .sunday{
-  left: 660px;
+  left: 600px;
   visibility: visible;
 }
 
