@@ -1,5 +1,5 @@
 <div class="col-xs-12 calBlock" id="calBlock">
-  <div class="box monday"></div>
+  <div class="box monday"><div id="testOutput"></div></div>
   <div class="box tuesday"></div>
   <div class="box wednesday"></div>
   <div class="box thursday"></div>

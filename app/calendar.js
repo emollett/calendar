@@ -1,14 +1,14 @@
-  function hide(){
-    var checkBox = document.getElementById("weekendYes");
+function hide(){
+  var checkBox = document.getElementById("weekendYes");
 
-    if (checkBox.checked == false){
-      saturday.style.visibility="hidden";
-      sunday.style.visibility="hidden";
-      }else{
-      saturday.style.visibility="visible";
-      sunday.style.visibility="visible";
-      }
+  if (checkBox.checked == false){
+    saturday.style.visibility="hidden";
+    sunday.style.visibility="hidden";
+    }else{
+    saturday.style.visibility="visible";
+    sunday.style.visibility="visible";
     }
+  }
 
 
 function calendarCreate(){
@@ -21,4 +21,11 @@ function calendarCreate(){
     document.getElementById("cal").appendChild(blockExtend);
   }
 
+  //testing bit for outputting date
+  var firstDate = document.getElementById("startDate").value;
+
+  var outputDate = document.createElement('p');
+  var dateText = document.createTextNode(firstDate);
+  outputDate.appendChild(dateText);
+  document.getElementById("testOutput").appendChild(outputDate);
 }

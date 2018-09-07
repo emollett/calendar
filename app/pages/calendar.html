@@ -12,7 +12,7 @@
   <div class="col-xs-12">
     <div class="form-group col-xs-3">
       <label for="startDate">What date do you want to start the calendar?</label>
-      <input type="number" class="form-control input-lg" id="startDate">
+      <input type="date" class="form-control input-lg" id="startDate">
     </div>
   </div>
 
@@ -41,6 +41,8 @@
       <button type="button" class="btn btn-success btn-lg" onclick="calendarCreate()">Create</button>
     </div>
   </div>
+
+
 
 <div class="col-xs-12" id="cal">
 {% include "partials/calendarblock.nunjucks" %}</br>
