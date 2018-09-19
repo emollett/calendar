@@ -10,22 +10,29 @@ function hide(){
     }
   }
 
-
 function calendarCreate(){
-  //to make the calendar appear with the right number of weeks repeated
   var numberOfWeeks = document.getElementById("noWeeks");
-  var calBlock = document.getElementById("calBlock");
+  var firstDate = new Date(document.getElementById("startDate").value);
+  var currentDate = new Date(firstDate);
 
-  for (i=0; i<numberOfWeeks.value-1; i++){
-    var blockExtend = calBlock.cloneNode(true);
-    document.getElementById("cal").appendChild(blockExtend);
+  function makeDay(message) {
+      var day = document.createElement('div');
+      day.classList.add("day");
+      day.innerHTML = message;
+      return day;
   }
 
-  //testing bit for outputting date
-  var firstDate = document.getElementById("startDate").value;
+  function makeDivider() {
+      var day = document.createElement('div');
+      day.classList.add("divider");
+      return day;
+  }
 
-  var outputDate = document.createElement('p');
-  var dateText = document.createTextNode(firstDate);
-  outputDate.appendChild(dateText);
-  document.getElementById("testOutput").appendChild(outputDate);
+  for (var i = 0; i < numberOfWeeks.value*7; i++) {
+    if (i % 7 === 0) {
+      document.getElementsByTagName('body')[0].appendChild(makeDivider())
+    }
+    currentDate.setDate(firstDate.getDate() + i);
+    document.getElementsByTagName('body')[0].appendChild(makeDay(currentDate.toLocaleDateString('en-GB')))
+  }
 }

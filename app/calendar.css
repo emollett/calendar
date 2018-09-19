@@ -1,45 +1,3 @@
-.box {
-  height: 100px;
-  width: 100px;
-  border-style: solid;
-  position: absolute;
-}
-
-.calBlock {
-  position: absolute;
-  margin-bottom: 95px;
-}
-
-.monday{
-  left:0;
-}
-
-.tuesday{
-  left: 100px;
-}
-
-.wednesday{
-  left: 200px;
-}
-
-.thursday{
-  left: 300px;
-}
-
-.friday{
-  left: 400px;
-}
-
-.saturday{
-  left: 500px;
-  visibility: visible;
-}
-
-.sunday{
-  left: 600px;
-  visibility: visible;
-}
-
 .myRadio{
   content: "";
   border: 2px solid;
@@ -54,4 +12,15 @@
 
 .radio-inline{
   left: 5px;
+}
+
+.day {
+  height: 100px;
+  width: 100px;
+  border-style: solid;
+  float:left;
+}
+
+.divider {
+  clear: both;
 }
