@@ -16,6 +16,7 @@
   "dependencies": {
     "handlebars": "^4.0.11",
     "js-datepicker": "^3.3.2",
+    "moment": "^2.22.2",
     "npm": "^6.4.1"
   },
   "devDependencies": {

@@ -24,3 +24,7 @@
 .divider {
   clear: both;
 }
+
+.hidden {
+  visibility: hidden;
+}
