@@ -1,14 +1,3 @@
-// function hide(){
-//   var checkBox = document.getElementById("weekendYes");
-//
-//   if (checkBox.checked == false){
-//     saturday.style.visibility="hidden";
-//     sunday.style.visibility="hidden";
-//     }else{
-//     saturday.style.visibility="visible";
-//     sunday.style.visibility="visible";
-//     }
-//   }
 
 function calendarCreate(){
   var numberOfWeeks = document.getElementById("noWeeks");
@@ -23,9 +12,9 @@ function calendarCreate(){
     };
 
     if ((i+2) % 7 === 0 && checkBox.checked == false){
-      document.getElementsByTagName('body')[0].appendChild(hiddenDay());
+      document.getElementsByTagName('body')[0].appendChild(makeDay("hello", true));
     }else if((i+1) % 7 == 0 && checkBox.checked == false){
-      document.getElementsByTagName('body')[0].appendChild(hiddenDay());
+      document.getElementsByTagName('body')[0].appendChild(makeDay("hello", true))
     }else{
     currentDate.setDate(firstDate.getDate() + i);
     document.getElementsByTagName('body')[0].appendChild(makeDay(currentDate.toLocaleDateString('en-GB')))
@@ -33,20 +22,23 @@ function calendarCreate(){
   }
 }
 
-function makeDay(message) {
+function makeDay(message, isHidden) {
     var day = document.createElement('div');
     day.classList.add("day");
     day.innerHTML = message;
+    if (isHidden) {
+      day.classList.add("hidden");
+    }
     return day;
 }
 
-function hiddenDay(message) {
-  var day = document.createElement('div');
-  day.classList.add("day");
-  day.classList.add("hidden");
-  day.innerHTML = message;
-  return day;
-}
+// function hiddenDay(message) {
+//   var day = document.createElement('div');
+//   day.classList.add("day");
+//   day.classList.add("hidden");
+//   day.innerHTML = message;
+//   return day;
+// }
 
 function makeDivider() {
     var day = document.createElement('div');

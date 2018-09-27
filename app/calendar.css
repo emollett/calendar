@@ -21,10 +21,10 @@
   float:left;
 }
 
-.divider {
-  clear: both;
-}
-
 .hidden {
   visibility: hidden;
+}
+
+.divider {
+  clear: both;
 }
