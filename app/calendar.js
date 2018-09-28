@@ -10,13 +10,12 @@ function calendarCreate(){
     if (i % 7 === 0) {
       document.getElementsByTagName('body')[0].appendChild(makeDivider());
     };
-
+    currentDate.setDate(currentDate.getDate() + 1);
     if ((i+2) % 7 === 0 && checkBox.checked == false){
       document.getElementsByTagName('body')[0].appendChild(makeDay("hello", true));
     }else if((i+1) % 7 == 0 && checkBox.checked == false){
       document.getElementsByTagName('body')[0].appendChild(makeDay("hello", true))
     }else{
-    currentDate.setDate(firstDate.getDate() + i);
     document.getElementsByTagName('body')[0].appendChild(makeDay(currentDate.toLocaleDateString('en-GB')))
     }
   }
