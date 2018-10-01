@@ -15,8 +15,8 @@
 }
 
 .day {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 10%;
   border-style: solid;
   float:left;
 }
@@ -27,4 +27,28 @@
 
 .divider {
   clear: both;
+}
+
+.dayTitles {
+  height: 20px;
+  width: 10%;
+  float:left;
+  font-weight: bold;
+}
+
+@media print{
+
+  .day {
+    height: 150px;
+    width: 14.2%;
+    border-style: solid;
+    float:left;
+  }
+  .dayTitles {
+    height: 20px;
+    width: 14.2%;
+    float:left;
+    font-weight: bold;
+  }
+
 }
